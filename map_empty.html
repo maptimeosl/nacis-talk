@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <!-- let the web page know where the map goes-->
   <style type="text/css">
     body {
       padding: 0;
@@ -13,16 +14,15 @@
     }
 
   </style>
+  <!-- Get the Leaflet stuff here-->
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 </head>
 <body>
-  <div id="leaflet-map"></div>
+  <!-- Declare that you want a map pane-->
+
+  <!-- tell Leaflet what to do -->
   <script>
-    var map = L.map('leaflet-map').setView([59.9124, 10.7467], 13);
-    L.tileLayer('http://b.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
-    var myIcon = L.icon({iconUrl: 'bitrafpin.png', iconSize: [30, 60], iconAnchor: [15, 60],});
-    L.marker([59.914531, 10.7505120], {icon: myIcon}).bindPopup("Bitraf Y'all!").addTo(map);
     </script>
 </body>
 </html>
